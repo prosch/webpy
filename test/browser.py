@@ -49,7 +49,9 @@ class BrowserTest(webtest.TestCase):
 
     def testRedirect(self):
         b = app.browser()
-
+        <a href="http://www.profischnell.com">Übersetzung</a>
+        <a href="http://www.profi-fachuebersetzungen.de">Übersetzung</a>
+        <a href="http://www.profi-fachuebersetzung.de">Übersetzung Englisch Deutsch</a>
         b.open('http://0.0.0.0:8080/redirect')
         self.assertEquals(b.url, 'http://0.0.0.0:8080/')
         b.open('http://0.0.0.0:8080/redirect?url=/hello/foo')
